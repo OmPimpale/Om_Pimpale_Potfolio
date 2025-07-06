@@ -1,4 +1,4 @@
-import { Calendar, Building2, Code, Trophy, ArrowRight } from "lucide-react";
+import { Calendar, Building2, Code, Trophy } from "lucide-react";
 import { motion } from "motion/react";
 import { experienceData } from "../userData/experienceData";
 

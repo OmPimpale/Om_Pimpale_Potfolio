@@ -1,12 +1,18 @@
 export const skills = [
-    { name: 'JavaScript', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'React', level: 88 },
-    { name: 'Node.js', level: 82 },
-    { name: 'Python', level: 80 },
-    { name: 'MongoDB', level: 75 },
-    { name: 'PostgreSQL', level: 78 },
-    { name: 'AWS', level: 70 },
-    { name: 'Docker', level: 72 },
-    { name: 'Git', level: 85 },
-  ];
+  { name: "React", level: 91 },
+  { name: "JavaScript (ES6)", level: 87 },
+  { name: "TypeScript", level: 77 },
+  { name: "TailwindCSS", level: 94 },
+  { name: "Bootstrap", level: 96 },
+  { name: "jQuery", level: 78 },
+  { name: "HTML5 & CSS3", level: 93 },
+
+  { name: "Core & Advanced Java", level: 72 },
+  { name: "JDBC", level: 72 },
+  { name: "Hibernate", level: 75 },
+  { name: "Spring", level: 72 },
+  { name: "SQL", level: 79 },
+  { name: "Java", level: 81 },
+
+  { name: "Git & GitHub", level: 73 },
+];

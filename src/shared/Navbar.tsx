@@ -1,27 +1,49 @@
 import { Menu, Moon, Sun, Terminal, X } from "lucide-react";
 import { navigation } from "../userData/navData";
 import { AnimatePresence, motion } from "motion/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = ({ darkMode, setDarkMode }: any) => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                setShowNavbar(false);
+            } else {
+                setShowNavbar(true);
+            }
+
+            setLastScrollY(currentScrollY);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, [lastScrollY]);
+
     return (
         <>
             {/* Navigation */}
             <motion.nav
-                initial={{ y: -100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="fixed p-6 top-0 left-0 right-0 py-2 z-50"
+                initial={{ y: 0 }}
+                animate={{ y: showNavbar ? 0 : -100 }}
+                transition={{ duration: 0.3, ease: "easeInOut" }}
+                className="fixed p-6 top-0 left-0 right-0 py-2 z-50 will-change-transform"
             >
                 <div className="absolute inset-0 bg-white/10 dark:bg-gray-900/10 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/30">
-                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-purple-500/5 to-pink-500/5 rounded"></div>
                 </div>
 
                 <div className="relative max-w-7xl mx-auto sm:px-6 lg:px-8">

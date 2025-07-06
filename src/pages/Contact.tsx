@@ -4,8 +4,15 @@ import ColoredBtn from '../shared/ColoredBtn';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { contactSchema, type ContactFormValues } from '../contactSchema';
 import { toFormikValidationSchema } from 'zod-formik-adapter';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
+import { useEffect } from 'react';
 
 const Contact = () => {
+
+    useEffect(() => {
+        emailjs.init("EiA3EweT9XXASgaHW");
+    }, []);
 
     const initialValues: ContactFormValues = {
         name: '',
@@ -15,8 +22,63 @@ const Contact = () => {
         message: '',
     };
 
-    const handleSubmit = (values: ContactFormValues) => {
-        console.log('Form Data:', values);
+    const handleSubmit = async (
+        values: ContactFormValues,
+        { resetForm }: any
+    ) => {
+        const params = {
+            name: values.name,
+            email: values.email,
+            num: values.phone,
+            subject: values.subject,
+            message: values.message,
+        };
+
+        // Detect system theme
+        const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+        const baseStyle = {
+            minWidth: "250px",
+            padding: "12px 16px",
+            fontSize: "14px",
+            borderRadius: "8px",
+            fontFamily: "var(--font-tech)", // Tailwind custom font
+            background: isDarkMode ? "#1f2937" : "#93c5fd", // bg-gray-800 / bg-blue-300
+            color: isDarkMode ? "#ffffff" : "#1e293b", // text-white / text-heading
+        };
+
+        const emailPromise = emailjs.send(
+            "service_6sojt7z",
+            "template_pjfu4xf",
+            params
+        );
+
+        toast.promise(
+            emailPromise,
+            {
+                loading: "Sending message...",
+                success: "Email sent successfully!",
+                error: "Failed to send email. Please try again.",
+            },
+            {
+                style: baseStyle,
+                success: {
+                    duration: 3000,
+                    icon: "📨",
+                },
+                error: {
+                    duration: 4000,
+                    icon: "⚠️",
+                },
+            }
+        );
+
+        try {
+            await emailPromise;
+            resetForm();
+        } catch (error) {
+            console.error("Email sending failed:", error);
+        }
     };
 
     return (
@@ -192,10 +254,11 @@ const Contact = () => {
                                                 Message *
                                             </label>
                                             <Field
+                                                as="textarea"
                                                 id="message"
                                                 name="message"
                                                 required
-                                                rows={5}
+                                                rows="5"
                                                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-dark-slate font-tech dark:text-white transition-colors duration-200"
                                                 placeholder="Tell me about your project..."
                                                 spellCheck="true"
@@ -205,9 +268,13 @@ const Contact = () => {
 
                                         <div className='flex justify-end'>
                                             <ColoredBtn
-                                                text="Send Message"
-                                                icon={<Send className="h-4 w-4" />}
+                                                text={isSubmitting ? (<svg width="24" height="24" viewBox="0 0 100 100" className="animate-spin" xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <circle cx="50" cy="50" r="35" stroke="white" strokeWidth="10" fill="none" strokeLinecap="round" strokeDasharray="100" strokeDashoffset="50" />
+                                                </svg>) : "Send Message"}
+                                                icon={!isSubmitting ? <Send className="h-4 w-4" /> : null}
                                                 type="submit"
+                                                disabled={isSubmitting}
                                             // className='ml-auto'
                                             />
                                         </div>

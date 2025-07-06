@@ -8,15 +8,14 @@ const Footer = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                     <div className="grid md:grid-cols-4 gap-8">
                         <div className="col-span-2">
-                            <div className="flex items-center mb-4">
+                            <a href="#" className="flex items-center mb-4">
                                 <Terminal className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                                 <span className="ml-2 text-xl font-bold font-heading text-dark-slate dark:text-white">
-                                    TechDev
+                                    Om P.
                                 </span>
-                            </div>
+                            </a>
                             <p className="text-medium-gray font-body dark:text-gray-400 mb-6 max-w-md">
-                                Full-Stack Developer passionate about creating innovative solutions
-                                and building the future of web technology.
+                                Frontend Developer & Java Enthusiast dedicated to building seamless, performant, and scalable web applications using React, TypeScript, and Spring Boot.
                             </p>
                             <div className="flex space-x-4">
                                 <a

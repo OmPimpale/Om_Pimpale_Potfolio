@@ -25,7 +25,16 @@ const Education = () => {
 
                     <div className="relative">
                         <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-blue-500 to-purple-500"></div>
-
+                        <div className='absolute w-full'>
+                            <div className='relative top-0 left-3/4'>
+                                <svg width="48" height="48" viewBox="0 0 100 100" className='animate-bounce'>
+                                    <circle cx="50" cy="50" r="30" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.6"                       >
+                                    </circle>
+                                    <circle cx="50" cy="50" r="20" stroke="#8b5cf6" strokeWidth="4" fill="none">
+                                    </circle>
+                                </svg>
+                            </div>
+                        </div>
                         {education.map((item, index) => {
                             const isEven = index % 2 === 0;
                             const flexDirection = isEven ? 'md:flex-row' : 'md:flex-row-reverse';
@@ -63,6 +72,17 @@ const Education = () => {
                                 </motion.div>
                             )
                         })}
+
+                        <div className='absolute w-full text-yellow-500'>
+                            <div className='relative top-0 left-1/4'>
+                                <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
+                                    <circle cx="50" cy="50" r="30" stroke=" #eab308" strokeWidth="4" fill="none" opacity="0.6"                       >
+                                    </circle>
+                                    <circle cx="50" cy="50" r="20" stroke=" #facc15" strokeWidth="4" fill="none">
+                                    </circle>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

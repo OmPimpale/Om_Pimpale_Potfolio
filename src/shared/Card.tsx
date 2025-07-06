@@ -18,7 +18,7 @@ const Card = () => {
                         <img
                             src={project.image}
                             alt={project.title}
-                            className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
+                        className="w-full h-52 object-cover transition-transform duration-300 hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end justify-end">
                             <div className="p-4 text-white">
@@ -45,7 +45,7 @@ const Card = () => {
                     </div>
 
                     <div className="p-6">
-                        <a href={project.liveDemo} className="text-xl font-bold font-heading text-dark-slate dark:text-white underline hover:no-underline hover:text-blue-600 hover:dark:text-purple-600 duration-200 ease-linear">
+                        <a href={project.liveDemo} target="_blank" className="text-xl font-bold font-heading text-dark-slate dark:text-white underline hover:no-underline hover:text-blue-600 hover:dark:text-purple-600 duration-200 ease-linear">
                             {project.title}
                         </a>
                         <p className="text-medium-gray font-body dark:text-gray-300 mb-4 mt-3">

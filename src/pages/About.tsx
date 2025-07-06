@@ -59,7 +59,45 @@ const About = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-400 to-purple-600 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+                                {/* <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-400/90 to-purple-400/90 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div> */}
+                                {/* <div className='absolute top-[15%] left-[75%] z-50'>
+                                    <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
+                                        <circle cx="50" cy="50" r="30" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.6"                       >
+                                        </circle>
+                                        <circle cx="50" cy="50" r="20" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.4">
+                                        </circle>
+                                        <circle cx="50" cy="50" r="10" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.2">
+                                        </circle>
+                                        <circle cx="50" cy="50" r="5" stroke="#8b5cf6" strokeWidth="4" fill="#8b5cf6">
+                                        </circle>
+                                    </svg>
+                                </div> */}
+                                <div className="">
+                                    <div className='absolute top-[22.3%] left-[72%] z-50'>
+                                        <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
+                                            <circle cx="50" cy="50" r="10" stroke="#8b5cf6" strokeWidth="4" fill="#8b5cf6" opacity="0.4">
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                    <div className='absolute top-[30%] left-[72%] z-50'>
+                                        <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
+                                            <circle cx="50" cy="50" r="20" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.6">
+                                            </circle>
+                                            <circle cx="50" cy="50" r="10" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.4">
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                    <div className='absolute top-[24.5%] left-[78%] z-50'>
+                                        <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
+                                            <circle cx="50" cy="50" r="30" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.8"                       >
+                                            </circle>
+                                            <circle cx="50" cy="50" r="20" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.6">
+                                            </circle>
+                                            <circle cx="50" cy="50" r="10" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.4">
+                                            </circle>
+                                        </svg>
+                                    </div>
+                                </div>
                             </motion.div>
 
                             <motion.div
@@ -73,12 +111,12 @@ const About = () => {
                                     <p className="text-gray-600 dark:text-gray-300 mb-6">
                                         {data.about.aboutPara1}
                                     </p>
-                                    <p className="text-gray-600 dark:text-gray-300 mb-6">
+                                    {/* <p className="text-gray-600 dark:text-gray-300 mb-6">
                                         {data.about.aboutPara2}
                                     </p>
                                     <p className="text-gray-600 dark:text-gray-300 mb-8">
                                         {data.about.aboutPara3}
-                                    </p>
+                                    </p> */}
                                 </div>
 
                                 <motion.div
@@ -93,6 +131,7 @@ const About = () => {
                                             text={info.text}
                                             icon={info.icon}
                                             link={info.link}
+                                            target="_blank"
                                         />
                                     )}
                                 </motion.div>

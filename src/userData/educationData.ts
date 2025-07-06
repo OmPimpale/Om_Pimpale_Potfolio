@@ -3,7 +3,7 @@ export const education = [
       date: '2024 - 2025',
       institute: 'Envision Computer Training Institute, Pune',
       qualification: 'Full Stack Java Development',
-      description: 'Major in Software Engineering with focus on web technologies and data structures.'
+      description: 'Focused on frontend design, web technologies, and backend implementation'
     },
     {
       date: '2021 - 2025',
@@ -14,13 +14,13 @@ export const education = [
     {
       date: '2020 - 2021',
       institute: 'Jawahar Navodaya Vidyalaya, Bhusaval',
-      qualification: 'Secondary Education',
-      description: 'Completed with distinction in Mathematics and Science subjects.'
+      qualification: 'Higher Secondary Certificate (12th)',
+      description: 'Completed with distinction in Science and Computer Science subjects.'
     },
     {
       date: '2018 - 2019',
       institute: 'Jawahar Navodaya Vidyalaya, Bhusaval',
-      qualification: 'Secondary Education',
-      description: 'Completed with distinction in Mathematics and Science subjects.'
+      qualification: 'Secondary School Certificate (10th)',
+      description: ' Passed with distinction in core academics'
     }
   ];
