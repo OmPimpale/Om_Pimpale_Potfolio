@@ -35,7 +35,7 @@ const Footer = () => {
                                     <Linkedin className="h-5 w-5 text-gray-600 dark:text-gray-400" />
                                 </a>
                                 <a
-                                    href="mailto:john.doe@email.com"
+                                    href="mailto:ompimpale2003@gmail.com"
                                     className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
                                 >
                                     <Mail className="h-5 w-5 text-gray-600 dark:text-gray-400" />

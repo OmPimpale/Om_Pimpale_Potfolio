@@ -7,7 +7,7 @@ import sierra from "../assets/projectImg/nature.jpg";
 import hideaway from "../assets/projectImg/resort.jpg";
 import cross from "../assets/projectImg/church.jpg";
 import dashboard from "../assets/projectImg/dashboard.jpg";
-import growmate from "../assets/projectImg/habits.png";
+import growmate from "../assets/projectImg/habit.png";
 
 export const projects = [
   {

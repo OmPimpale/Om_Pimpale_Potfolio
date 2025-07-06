@@ -121,7 +121,7 @@ const Navbar = ({ darkMode, setDarkMode }: any) => {
                                             exit={{ rotate: 90, opacity: 0 }}
                                             transition={{ duration: 0.3 }}
                                         >
-                                            <Sun className="h-5 w-5 text-yellow-400" />
+                                            <Sun className="h-6 w-6 text-yellow-400" />
                                         </motion.div>
                                     ) : (
                                         <motion.div
@@ -131,7 +131,7 @@ const Navbar = ({ darkMode, setDarkMode }: any) => {
                                             exit={{ rotate: -90, opacity: 0 }}
                                             transition={{ duration: 0.3 }}
                                         >
-                                            <Moon className="h-5 w-5 text-dark-slate" />
+                                            <Moon className="h-6 w-6 text-dark-slate" />
                                         </motion.div>
                                     )}
                                 </AnimatePresence>

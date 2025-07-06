@@ -1,7 +1,12 @@
-import {motion} from 'motion/react';
+// import { motion, useMotionValue, useTransform, animate } from 'motion/react';
+import {motion} from 'framer-motion';
 import { skills } from '../userData/skillsData';
+// import * as Progress from '@radix-ui/react-progress';
+// import { useEffect, useState } from 'react';
 
 const Skills = () => {
+    // const MotionIndicator = motion(Progress.Indicator);
+
     return (
         <>
             {/* Skills Section */}
@@ -52,6 +57,64 @@ const Skills = () => {
                             </motion.div>
                         ))}
                     </div>
+
+                    {/* <div className="grid md:grid-cols-2 gap-8">
+                        {skills.map((skill, index) => {
+                            const progress = useMotionValue(0);
+                            const rounded = useTransform(progress, (latest) =>
+                                Math.round(latest)
+                            );
+
+                            const [displayValue, setDisplayValue] = useState(0);
+                            useEffect(() => {
+                                const unsubscribe = rounded.on("change", (v) => {
+                                    setDisplayValue(v);
+                                });
+
+                                const controls = animate(progress, skill.level, {
+                                    duration: 1,
+                                    delay: index * 0.1,
+                                });
+
+                                return () => {
+                                    controls.stop();
+                                    unsubscribe();
+                                };
+                            }, []);
+
+                            return (
+                                <motion.div
+                                    key={skill.name}
+                                    initial={{ opacity: 0, x: -50 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.6, delay: index * 0.1 }}
+                                    className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                                >
+                                    <div className="flex justify-between items-center mb-4">
+                                        <h3 className="text-lg font-semibold font-body text-gray-900 dark:text-white">
+                                            {skill.name}
+                                        </h3>
+                                        <span className="text-sm font-medium font-tech text-gray-500 dark:text-gray-400">
+                                            {displayValue}%
+                                        </span>
+                                    </div>
+
+                                    <Progress.Root
+                                        className="relative overflow-hidden bg-gray-200 dark:bg-gray-700 rounded-full h-2 w-full"
+                                        value={skill.level}
+                                    >
+                                        <MotionIndicator
+                                            initial={{ width: 0 }}
+                                            whileInView={{ width: `${skill.level}%` }}
+                                            transition={{ duration: 1, delay: index * 0.1 }}
+                                            className="h-full bg-gradient-to-r from-blue-500 to-purple-600 rounded-full"
+                                        />
+                                    </Progress.Root>
+                                </motion.div>
+                            );
+                        })}
+                    </div> */}
                 </div>
             </section>
         </>

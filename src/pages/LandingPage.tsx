@@ -8,6 +8,9 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "../shared/Footer";
 import Experience from "./Experience";
+import { Download, FileUser } from "lucide-react";
+import { motion } from 'motion/react';
+import resume from "../assets/resume/Om_Pimpale.pdf"
 
 const LandingPage = () => {
 
@@ -37,6 +40,18 @@ const LandingPage = () => {
                     <Projects />
                     <Contact />
                     <Footer />
+                    <motion.a
+                        key="sun"
+                        initial={{ rotate: -90, opacity: 0 }}
+                        animate={{ rotate: 0, opacity: 1 }}
+                        exit={{ rotate: 90, opacity: 0 }}
+                        transition={{ duration: 0.3 }}
+                        href={resume}
+                        title="Download Resume"
+                        target="_blank"
+                    >
+                        <FileUser className="text-blue-600 dark:text-purple-500 w-12 h-12 fixed bottom-8 right-12 p-3 rounded-full bg-gray-300/50 dark:bg-white/10 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/30" />
+                    </motion.a>
                 </div>
             </div>
         </>

@@ -91,7 +91,6 @@ const HeroSection = () => {
                         <img
                             className="rounded-xl shadow-xl"
                             src={userImage} alt="User"
-                            loading="lazy"
                         />
                     </motion.div>
                 </div>
