@@ -10,7 +10,7 @@ export const myData = [
       "Frontend-Focused Developer with hands-on experience in building responsive, scalable, and modern web applications using React and Java.",
     about: {
       aboutPara1:
-        "I'm a frontend-focused web developer skilled in building scalable and interactive web applications using React, TypeScript, and Tailwind CSS. I’m currently working as an Associate Software Engineer Intern at 360customizer, where I contribute to SaaS and e-commerce platforms with real-time integrations. With strong fundamentals in both frontend and Java backend (Spring Boot, Hibernate), I enjoy solving problems and bringing clean, modern UI ideas to life.",
+        "I'm a frontend-focused web developer skilled in building scalable and interactive web applications using React, TypeScript, and Tailwind CSS. I’m currently working as an Associate Software Engineer Intern at 360customizer, where I contribute to SaaS and e-commerce platforms with real-time integrations. With strong fundamentals in both frontend and Java backend (Spring Boot, Hibernate), I enjoy solving problems and bringing clean, modern UI ideas to life."
       // aboutPara2:
       //   "I'm a passionate Full-Stack Developer with expertise in modern web technologies. I love creating efficient, scalable solutions and staying up-to-date with the latest industry trends.",
       // aboutPara3:
