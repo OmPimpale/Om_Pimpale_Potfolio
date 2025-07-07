@@ -8,7 +8,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "../shared/Footer";
 import Experience from "./Experience";
-import { Download, FileUser } from "lucide-react";
+import { FileUser } from "lucide-react";
 import { motion } from 'motion/react';
 import resume from "../assets/resume/Om_Pimpale.pdf"
 
