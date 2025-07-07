@@ -48,8 +48,8 @@ const Education = () => {
                                     transition={{ duration: 0.6, delay: index * 0.1 }}
                                     className={`relative flex flex-col md:flex-row ${flexDirection} items-start md:items-center mb-12`}
                                 >
-                                    <div className={`md:w-1/2 ${paddingClass}`}>
-                                        <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                                    <div className={`md:w-1/2  ${paddingClass}`}>
+                                        <div className="bg-white dark:bg-gray-800 rounded-xl dark:shadow-black/70 dark:shadow-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
                                             <div className="flex items-center justify-center md:justify-start mb-4">
                                                 <GraduationCap className="h-6 w-6 text-blue-600 dark:text-blue-400 mr-3" />
                                                 <span className="text-sm font-medium text-blue-600 dark:text-blue-200 bg-blue-100 dark:bg-blue-900 px-3 py-1 rounded-full font-tech">
@@ -75,7 +75,7 @@ const Education = () => {
 
                         <div className='absolute w-full text-yellow-500'>
                             <div className='relative top-0 left-1/4'>
-                                <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
+                                <svg width="48" height="48" viewBox="0 0 100 100" className='animate-ping duration-300 ease-linear'>
                                     <circle cx="50" cy="50" r="30" stroke=" #eab308" strokeWidth="4" fill="none" opacity="0.6"                       >
                                     </circle>
                                     <circle cx="50" cy="50" r="20" stroke=" #facc15" strokeWidth="4" fill="none">

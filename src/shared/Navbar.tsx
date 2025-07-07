@@ -181,8 +181,8 @@ const Navbar = ({ darkMode, setDarkMode }: any) => {
                             initial={{ opacity: 0, height: 0, y: -20 }}
                             animate={{ opacity: 1, height: 'auto', y: 0 }}
                             exit={{ opacity: 0, height: 0, y: -20 }}
-                            transition={{ duration: 0.3, ease: "easeOut" }}
-                            className="md:hidden relative"
+                            transition={{ duration: 0.5, ease: "linear" }}
+                            className="lg:hidden relative"
                         >
                             <div className="absolute inset-0 bg-white/10 dark:bg-gray-900/10 backdrop-blur-xl border-t border-white/20 dark:border-gray-700/30">
                                 <div className="absolute inset-0 bg-gradient-to-b from-blue-500/5 to-purple-500/5"></div>

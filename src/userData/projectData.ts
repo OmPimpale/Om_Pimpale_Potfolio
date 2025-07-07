@@ -13,19 +13,22 @@ export const projects = [
   {
     title: "GrowMate - Build Habit",
     description:
-      "provide a clean and responsive UI for displaying data visualizations in an interactive and user-friendly manner.",
+      "A full-stack habit tracking platform to help users build meaningful routines and achieve personal goals.",
     image: growmate,
     tech: [
-      "HTML",
-      "CSS",
-      "Responsive Design",
-      "JavaScript",
-      "React.js",
-      "ChartJS",
-      "Easy PieChart",
+      "React",
+      "TypeScript",
+      "Java",
+      "Sprong Boot",
+      "MySQL",
+      "REST API",
+      "Axios",
+      "Axios",
+      "Tailwind CSS",
+      "Framar Motion",
       "Git & Gihub",
     ],
-    liveDemo: "https://ompimpale-dashboard.netlify.app/",
+    liveDemo: "https://growmate.netlify.app/",
     github: "https://github.com/OmPimpale/GrowMate.git",
   },
   {
@@ -48,7 +51,7 @@ export const projects = [
   {
     title: "Neura Artificial Inteligence",
     description:
-      "feature-rich website template designed specifically for AI and technology-focused businesses",
+      "Feature-rich website template designed specifically for AI and technology-focused businesses.",
     image: neura,
     tech: [
       "HTML",
@@ -83,7 +86,7 @@ export const projects = [
   {
     title: "Sierra Nature",
     description:
-      "clean and minimalist design, coupled with interactive elements, invites users to explore the beauty of the natural world.",
+      "Clean and minimalist design, coupled with interactive elements, invites users to explore the beauty of the natural world.",
     image: sierra,
     tech: [
       "React.js",
@@ -100,7 +103,7 @@ export const projects = [
   {
     title: "User Dashboard",
     description:
-      "provide a clean and responsive UI for displaying data visualizations in an interactive and user-friendly manner.",
+      "Provide a clean and responsive UI for displaying data visualizations in an interactive and user-friendly manner.",
     image: dashboard,
     tech: [
       "HTML",
@@ -118,7 +121,7 @@ export const projects = [
   {
     title: "Crose Church",
     description:
-      "crafted for churches, religious organizations, and spiritual communities to establish their online presence with elegance and simplicity.",
+      "Crafted for churches, religious organizations, and spiritual communities to establish their online presence with elegance and simplicity.",
     image: cross,
     tech: ["HTML", "CSS", "Responsive Design", "JavaScript", "Git & Gihub"],
     liveDemo: "https://ompimpale.github.io/Crose_Chruch_Site/",
@@ -127,7 +130,7 @@ export const projects = [
   {
     title: "Winns Digital Agency",
     description:
-      "perfect for businesses seeking a sleek, modern platform to showcase their services, portfolio, or ideas",
+      "Perfect for businesses seeking a sleek, modern platform to showcase their services, portfolio, or ideas.",
     image: winns,
     tech: [
       "HTML",
@@ -146,7 +149,7 @@ export const projects = [
   {
     title: "Jevelin Home Fitness",
     description:
-      "crafted to meet the needs of modern businesses and individuals in the fitness, training, and technology sectors.",
+      "Crafted to meet the needs of modern businesses and individuals in the fitness, training, and technology sectors.",
     image: jevelin,
     tech: ["HTML", "CSS", "Git & Gihub", "Responsive Design", "AOS"],
     liveDemo:
@@ -157,7 +160,7 @@ export const projects = [
   {
     title: "Apzo Virtual Reality",
     description:
-      "optimized for businesses showcasing their VR solutions, promoting demos, or offering services in the virtual reality space.",
+      "Optimized for businesses showcasing their VR solutions, promoting demos, or offering services in the virtual reality space.",
     image: apzo,
     tech: ["HTML", "CSS", "Git & Gihub", "Responsive Design", "jQuery"],
     liveDemo: "https://ompimpale.github.io/Apzo---VR---Web-Template/",

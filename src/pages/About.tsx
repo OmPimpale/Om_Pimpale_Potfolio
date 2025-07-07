@@ -33,7 +33,7 @@ const About = () => {
                                 transition={{ duration: 0.6 }}
                                 className="relative lg:col-span-2"
                             >
-                                <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl">
+                                <div className="relative z-10 bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-xl dark:shadow-black/70 dark:shadow-lg">
                                     <div className="flex items-center mb-6">
                                         <User className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" />
                                         <h3 className="text-xl font-bold font-heading text-gray-900 dark:text-white">
@@ -72,14 +72,16 @@ const About = () => {
                                         </circle>
                                     </svg>
                                 </div> */}
-                                <div className="">
-                                    <div className='absolute top-[22.3%] left-[72%] z-50'>
+                                <div className="absolute top-[20%] left-[78%]">
+                                    <div className='absolute -top-2 -left-1 z-50'>
                                         <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
-                                            <circle cx="50" cy="50" r="10" stroke="#8b5cf6" strokeWidth="4" fill="#8b5cf6" opacity="0.4">
+                                            <circle cx="50" cy="50" r="10" stroke="#8b5cf6" strokeWidth="4" fill="#none" opacity="0.4">
+                                            </circle>
+                                            <circle cx="50" cy="50" r="1" stroke="#8b5cf6" strokeWidth="4" fill="#8b5cf6" opacity="0.4">
                                             </circle>
                                         </svg>
                                     </div>
-                                    <div className='absolute top-[30%] left-[72%] z-50'>
+                                    <div className='absolute top-3 -left-3 z-50'>
                                         <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
                                             <circle cx="50" cy="50" r="20" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.6">
                                             </circle>
@@ -87,7 +89,7 @@ const About = () => {
                                             </circle>
                                         </svg>
                                     </div>
-                                    <div className='absolute top-[24.5%] left-[78%] z-50'>
+                                    <div className='absolute top-1 left-5 z-50'>
                                         <svg width="48" height="48" viewBox="0 0 100 100" className='animate-pulse duration-75'>
                                             <circle cx="50" cy="50" r="30" stroke="#8b5cf6" strokeWidth="4" fill="none" opacity="0.8"                       >
                                             </circle>

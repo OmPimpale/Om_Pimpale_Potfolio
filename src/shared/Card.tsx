@@ -12,7 +12,7 @@ const Card = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl dark:shadow-black/70 dark:shadow-md hover:dark:shadow-lg hover:dark:shadow-black/70 transition-shadow duration-300"
                 >
                     <div className="relative overflow-hidden">
                         <img

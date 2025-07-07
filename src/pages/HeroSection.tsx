@@ -2,7 +2,7 @@ import { ChevronRight, Code } from "lucide-react";
 import { motion } from "motion/react";
 import PlaneBtn from "../shared/PlaneBtn";
 import ColoredBtn from "../shared/ColoredBtn";
-import userImage from "../assets/User.jpg";
+import userImage from "../assets/9439682.jpg";
 // import { useState } from "react";
 
 const HeroSection = () => {
@@ -45,7 +45,7 @@ const HeroSection = () => {
                     </svg>
                 </div>
 
-                <div className="lg:grid grid-cols-5 gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="lg:grid grid-cols-5 items-center gap-8 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                     <div className="text-center col-span-3">
                         <motion.div
                             initial={{ opacity: 0, y: -50 }}
@@ -89,7 +89,7 @@ const HeroSection = () => {
                         className="col-span-2 mt-10 lg:mt-0 rounded-xl"
                     >
                         <img
-                            className="rounded-xl shadow-xl"
+                            className="rounded-xl shadow-xl dark:shadow-black/70 dark:shadow-lg"
                             src={userImage} alt="User"
                         />
                     </motion.div>

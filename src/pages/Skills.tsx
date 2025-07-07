@@ -35,7 +35,7 @@ const Skills = () => {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+                                className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg dark:shadow-black/70 dark:shadow-lg hover:dark:shadow-xl hover:dark:shadow-black/70 hover:shadow-xl transition-shadow duration-300"
                             >
                                 <div className="flex justify-between items-center mb-4">
                                     <h3 className="text-lg font-semibold font-body text-gray-900 dark:text-white">

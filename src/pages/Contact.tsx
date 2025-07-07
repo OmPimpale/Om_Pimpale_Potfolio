@@ -183,7 +183,7 @@ const Contact = () => {
                                 onSubmit={handleSubmit}
                             >
                                 {({ isSubmitting }) => (
-                                    <Form className="bg-white dark:bg-gray-900 rounded-xl p-5 md:p-8 shadow-lg"
+                                    <Form className="bg-white dark:bg-gray-900 rounded-xl p-5 md:p-8 shadow-lg dark:shadow-black/70 dark:shadow-lg"
                                     >
                                         <div className="grid md:grid-cols-2 gap-6 mb-6">
                                             <div>

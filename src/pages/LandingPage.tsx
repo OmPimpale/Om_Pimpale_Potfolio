@@ -14,13 +14,20 @@ import resume from "../assets/resume/Om_Pimpale.pdf"
 
 const LandingPage = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(() => {
+        const stored = localStorage.getItem('theme');
+        if (stored === 'dark') return true;
+        if (stored === 'light') return false;
+        return true;
+    });
 
     useEffect(() => {
         if (darkMode) {
             document.documentElement.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
         } else {
             document.documentElement.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
         }
     }, [darkMode]);
 
@@ -50,7 +57,7 @@ const LandingPage = () => {
                         title="Download Resume"
                         target="_blank"
                     >
-                        <FileUser className="text-blue-600 dark:text-purple-500 w-12 h-12 fixed bottom-8 right-12 p-3 rounded-full z-50 bg-gray-300/50 dark:bg-white/10 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/30" />
+                        <FileUser className="text-blue-500 hover:text-blue-700 dark:text-purple-500 hover:dark:text-purple-700 w-12 h-12 fixed bottom-8 right-12 p-3 rounded-full z-50 bg-gray-300/50 dark:bg-white/10 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/30 duration-200 ease-linear animate-pulse hover:animate-none"/>
                     </motion.a>
                 </div>
             </div>
