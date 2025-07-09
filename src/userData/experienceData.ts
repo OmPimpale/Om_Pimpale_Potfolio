@@ -10,23 +10,25 @@ export const experienceData = [
       "TypeScript",
       "Tailwind CSS",
       "UI/UX Design",
+      "Redux-Toolkit",
       "Git & GitHub",
       "Zoho Sites",
     ],
     roleDescription:
       "Contributed to the development and maintenance of scalable SaaS and e-commerce platforms using modern frontend technologies. Participated in Agile sprints, collaborated cross-functionally, and integrated third-party services like Zoho Bookings and Zoho Sites.",
     achievements: [
-      "Improved frontend performance by optimizing component structure and load times",
+      "Created and maintained responsive web applications with a focus on user experience",
       "Developed reusable components and ensured pixel-perfect UI using Tailwind",
-      " Integrated real-time API functionality with Zoho services",
+      "Integrated real-time API functionality for dynamic data updates",
       "Collaborated in Agile sprints with code reviews and daily standups",
+      "Contributed to documentation and knowledge sharing within the team",
     ],
     // Project Card Side
     projectImage:
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80",
     projectTitle: "E-Commerce Platform",
     projectDescription:
-      "Built a comprehensive platform with real-time inventory updates, secure payment integration, and a responsive admin dashboard using React (TypeScript) and Tailwind CSS.",
+      "Developed a feature-rich web platform incorporating real-time inventory tracking, dynamic mockup generation, and automated catalog creation tools. Built a fully responsive and interactive admin dashboard using React (TypeScript) and Tailwind CSS, ensuring a seamless user experience. Integrated multiple external REST APIs for live data synchronization and enhanced functionality, contributing to efficient product management and faster go-to-market workflows.",
     projectCategory: "Frontend Development",
   },
   // {

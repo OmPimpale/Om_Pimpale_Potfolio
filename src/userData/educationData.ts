@@ -9,7 +9,7 @@ export const education = [
       date: '2021 - 2025',
       institute: 'SKN Sinhgad Institute of Technology & Science, Lonavala',
       qualification: 'B.E. - Computer Science & Engineering',
-      description: 'Mathematics, Physics, and Chemistry with 92% aggregate.'
+      description: 'Developed strong foundation in programming with keen interest in development'
     },
     {
       date: '2020 - 2021',

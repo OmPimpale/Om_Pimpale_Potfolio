@@ -19,7 +19,7 @@ const Footer = () => {
                             </p>
                             <div className="flex space-x-4">
                                 <a
-                                    href="https://github.com/yourusername"
+                                    href="https://github.com/OmPimpale"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
@@ -27,7 +27,7 @@ const Footer = () => {
                                     <Github className="h-5 w-5 text-gray-600 dark:text-gray-400" />
                                 </a>
                                 <a
-                                    href="https://linkedin.com/in/yourusername"
+                                    href="https://www.linkedin.com/in/om-pimpale-8b0a1b1b6/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"

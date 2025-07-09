@@ -57,7 +57,7 @@ const LandingPage = () => {
                         title="Download Resume"
                         target="_blank"
                     >
-                        <FileUser className="text-blue-500 hover:text-blue-700 dark:text-purple-500 hover:dark:text-purple-700 w-12 h-12 fixed bottom-8 right-12 p-3 rounded-full z-50 bg-gray-300/50 dark:bg-white/10 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/30 duration-200 ease-linear animate-pulse hover:animate-none"/>
+                        <FileUser className="text-blue-500 hover:text-blue-700 dark:text-purple-500 hover:dark:text-purple-700 w-12 h-12 fixed bottom-6 right-6 p-3 rounded-full z-50 bg-gray-300/50 dark:bg-white/10 backdrop-blur-xl border-b border-white/20 dark:border-gray-700/30 duration-200 ease-linear animate-pulse hover:animate-none"/>
                     </motion.a>
                 </div>
             </div>
