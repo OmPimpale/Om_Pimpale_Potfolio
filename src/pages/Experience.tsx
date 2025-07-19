@@ -40,8 +40,8 @@ const Experience = () => {
                                     <div className="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-xl">
                                         {/* Company Header */}
                                         <div className="flex items-center justify-between mb-6">
-                                            <div className="flex items-center">
-                                                <Building2 className="h-8 w-8 text-blue-600 dark:text-blue-400 mr-3" />
+                                            <div className="flex items-start gap-2">
+                                                <Building2 className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                                                 <div>
                                                     <h3 className="text-xl font-bold font-heading text-dark-slate dark:text-white">
                                                         {experience.company}
@@ -118,7 +118,7 @@ const Experience = () => {
                                             <img
                                                 src={experience.projectImage}
                                                 alt={experience.projectTitle}
-                                                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105 grayscale"
+                                                className="object-cover transition-transform duration-300 grayscale aspect-video"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                                             <div className="absolute top-4 left-4">

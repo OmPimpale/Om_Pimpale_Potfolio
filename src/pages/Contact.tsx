@@ -1,4 +1,4 @@
-import { Send } from 'lucide-react';
+import { Loader, Loader2, MailCheck, MailX, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 import ColoredBtn from '../shared/ColoredBtn';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
@@ -42,8 +42,8 @@ const Contact = () => {
             padding: "12px 16px",
             fontSize: "14px",
             borderRadius: "8px",
-            fontFamily: "var(--font-tech)", // Tailwind custom font
-            background: isDarkMode ? "#1f2937" : "#93c5fd", // bg-gray-800 / bg-blue-300
+            fontFamily: "'Inter', 'sans-serif'", // Tailwind custom font
+            background: isDarkMode ? "#1f2937" : "#60a5fa", // bg-gray-800 / bg-blue-300
             color: isDarkMode ? "#ffffff" : "#1e293b", // text-white / text-heading
         };
 
@@ -62,13 +62,16 @@ const Contact = () => {
             },
             {
                 style: baseStyle,
+                loading: {
+                    icon: <Loader2 className='text-white animate-spin h-5 w-5' />,
+                },
                 success: {
                     duration: 3000,
-                    icon: "📨",
+                    icon: <MailCheck className='text-blue-600 dark:text-blue-400 h-5 w-5' />,
                 },
                 error: {
                     duration: 4000,
-                    icon: "⚠️",
+                    icon: <MailX className='text-red-600 dark:text-red-400 h-5 w-5' />,
                 },
             }
         );
@@ -268,10 +271,11 @@ const Contact = () => {
 
                                         <div className='flex justify-end'>
                                             <ColoredBtn
-                                                text={isSubmitting ? (<svg width="24" height="24" viewBox="0 0 100 100" className="animate-spin" xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <circle cx="50" cy="50" r="35" stroke="white" strokeWidth="10" fill="none" strokeLinecap="round" strokeDasharray="100" strokeDashoffset="50" />
-                                                </svg>) : "Send Message"}
+                                                text={isSubmitting ? (
+                                                    <Loader className='h-5 w-5 animate-spin' />
+                                                ) :
+                                                    "Send Message"
+                                                }
                                                 icon={!isSubmitting ? <Send className="h-4 w-4" /> : null}
                                                 type="submit"
                                                 disabled={isSubmitting}

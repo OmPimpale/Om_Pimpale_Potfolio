@@ -2,7 +2,7 @@ export const experienceData = [
   {
     id: 1,
     // Company Info Side
-    company: "360customizer",
+    company: "Namrup Fashion Pvt Ltd. (360Customizer)",
     role: "Associate Software Engineer Intern",
     duration: "April 2025 - present",
     technologies: [
