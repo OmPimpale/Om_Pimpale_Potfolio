@@ -1,4 +1,5 @@
-import { Github, Linkedin, Mail, Terminal } from "lucide-react";
+import { Terminal } from "lucide-react";
+import { myData } from "../userData/aboutData";
 
 const Footer = () => {
     return (
@@ -18,7 +19,18 @@ const Footer = () => {
                                 Frontend Developer & Java Enthusiast dedicated to building seamless, performant, and scalable web applications using React, TypeScript, and Spring Boot.
                             </p>
                             <div className="flex space-x-4">
-                                <a
+                                {myData[0].contact.map((info, index) =>
+                                    <a
+                                        href={info.link}
+                                        target="_blank"
+                                        key={index}
+                                        rel="noopener noreferrer"
+                                        className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                                    >
+                                        <info.icon className="h-5 w-5 text-gray-600 dark:text-gray-400" />
+                                    </a>
+                                )}
+                                {/* <a
                                     href="https://github.com/OmPimpale"
                                     target="_blank"
                                     rel="noopener noreferrer"
@@ -39,7 +51,7 @@ const Footer = () => {
                                     className="p-2 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
                                 >
                                     <Mail className="h-5 w-5 text-gray-600 dark:text-gray-400" />
-                                </a>
+                                </a> */}
                             </div>
                         </div>
 

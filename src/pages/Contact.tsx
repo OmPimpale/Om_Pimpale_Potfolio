@@ -2,7 +2,7 @@ import { Loader, Loader2, MailCheck, MailX, Send } from 'lucide-react';
 import { motion } from 'motion/react';
 import ColoredBtn from '../shared/ColoredBtn';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { contactSchema, type ContactFormValues } from '../contactSchema';
+import { contactSchema, type ContactFormValues } from '../utils/contactSchema';
 import { toFormikValidationSchema } from 'zod-formik-adapter';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';

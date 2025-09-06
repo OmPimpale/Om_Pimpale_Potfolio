@@ -20,17 +20,17 @@ export const myData = [
       {
         text: "GitHub",
         link: "https://github.com/OmPimpale",
-        icon: <Github className="h-4 w-4" />,
+        icon: Github,
       },
       {
         text: "LinkedIn",
-        link: "https://www.linkedin.com/in/om-pimpale-8b0a1b1b6/",
-        icon: <Linkedin className="h-4 w-4" />,
+        link: "https://www.linkedin.com/in/om-pimpale-83a524279",
+        icon: Linkedin,
       },
       {
         text: "Email",
         link: "mailto:ompimpale2003@gmail.com",
-        icon: <Mail className="h-4 w-4" />,
+        icon: Mail,
       },
     ],
   },

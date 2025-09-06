@@ -131,7 +131,7 @@ const About = () => {
                                         <PlaneBtn
                                             key={index}
                                             text={info.text}
-                                            icon={info.icon}
+                                            icon={<info.icon className=" h-4 w-4" />}
                                             link={info.link}
                                             target="_blank"
                                         />

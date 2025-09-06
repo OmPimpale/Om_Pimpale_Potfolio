@@ -1,16 +1,13 @@
 // src/schemas/contactSchema.ts
 import { z } from "zod";
+import { EMAIL_PATTERN, MESSAGE_PATTERN, MOBILE_PATTERN, NAME_PATTERN, SUBJECT_PATTERN } from "./valiationSchema";
 
 export const contactSchema = z.object({
-
   name: z
     .string()
     .min(2, "Enter a valid name (too short)")
-    .max(50, "Enter a valid name (too large)")
-    .regex(
-      /^[a-zA-Z\s'-]+$/,
-      "Enter a valid name"
-    )
+    .max(255, "Enter a valid name (too large)")
+    .regex(NAME_PATTERN, "Enter a valid name, only letters and spaces allowed")
     .trim()
     .transform((val) => val.replace(/\s+/g, " ")),
 
@@ -18,9 +15,9 @@ export const contactSchema = z.object({
     .string()
     .email("Invalid email address")
     .min(5, "Invalid email address")
-    .max(100, "Invalid email address")
+    .max(255, "Invalid email address")
     .regex(
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+      EMAIL_PATTERN,
       "Email must be a valid format (e.g., user@domain.com)"
     )
     .transform((val) => val.toLowerCase().trim()),
@@ -29,26 +26,25 @@ export const contactSchema = z.object({
     .string()
     .optional()
     .refine(
-      (val) => !val || /^\+?[1-9]\d{1,14}$/.test(val.replace(/\D/g, "")),
-      "Enter a valid phone number"
+      (val) => !val || MOBILE_PATTERN.test(val),
+      "Enter a valid 10-digit phone number"
     )
     .transform((val) => (val ? val.replace(/\D/g, "") : undefined)),
 
   subject: z
     .string()
-    .min(3, "Subject must be at least 3 characters long")
-    .max(100, "Subject must not exceed 100 characters")
-    .regex(/^[a-zA-Z0-9\s.,!?'-]+$/, "Subject contains invalid characters")
+    .min(5, "Subject must be at least 5 characters long")
+    .max(255, "Subject must not exceed 255 characters")
+    .regex(SUBJECT_PATTERN, "Subject contains invalid characters")
     .trim()
     .transform((val) => val.replace(/\s+/g, " ")),
 
   message: z
     .string()
-    .min(10, "Message must be at least 10 characters long")
+    .min(15, "Message must be at least 15 characters long")
     .max(1000, "Message must not exceed 1000 characters")
     .regex(
-      /^[a-zA-Z0-9\s.,!?@#$%^&*()_+-=;:'"<>[\]{}\\/]+$/,
-      "Message contains invalid characters"
+      MESSAGE_PATTERN, "Message contains invalid characters"
     )
     .trim()
     .transform((val) => val.replace(/\s+/g, " ")),
