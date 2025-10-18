@@ -31,8 +31,8 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={skill.name}
-                                initial={{ opacity: 0, x: -50 }}
-                                whileInView={{ opacity: 1, x: 0 }}
+                                initial={{ opacity: 0, y: 50 }}
+                                whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.6, delay: index * 0.1 }}
                                 className="bg-white dark:bg-gray-900 rounded-xl p-6 shadow-lg dark:shadow-black/70 dark:shadow-lg hover:dark:shadow-xl hover:dark:shadow-black/70 hover:shadow-xl transition-shadow duration-300"
