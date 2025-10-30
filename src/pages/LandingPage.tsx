@@ -10,7 +10,7 @@ import Footer from "../shared/Footer";
 import Experience from "./Experience";
 import { FileUser } from "lucide-react";
 import { motion } from 'motion/react';
-import resume from "../assets/resume/Om_Pimpale.pdf"
+import resume from "../assets/resume/Om_Pimpale.pdf";
 
 const LandingPage = () => {
 
